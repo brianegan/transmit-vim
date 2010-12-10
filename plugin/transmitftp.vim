@@ -5,4 +5,7 @@ fun! TransmitFtpSendFile()
     echo "File " . TransmitFtpFileName . " sent to Transmit" 
 endfunction
 
-nnoremap <C-S-U> :call TransmitFtpSendFile()<CR>
+" Removed keybinding because it was overriding C-U, which is the shortcut for
+" page-up
+"
+" nnoremap <C-S-U> :call TransmitFtpSendFile()<CR>
